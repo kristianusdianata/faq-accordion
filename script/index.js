@@ -21,14 +21,14 @@ function onToggleHandler(e) {
           const icon = openItem.querySelector(
             ".accordion__item-header .icon img"
           );
-          icon.src = "/assets/images/icon-plus.svg";
+          icon.src = "./assets/images/icon-plus.svg";
         }
       });
     }
 
-    currentIcon.src = "/assets/images/icon-minus.svg";
+    currentIcon.src = "./assets/images/icon-minus.svg";
   } else {
-    currentIcon.src = "/assets/images/icon-plus.svg";
+    currentIcon.src = "./assets/images/icon-plus.svg";
   }
 }
 
