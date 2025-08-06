@@ -1,0 +1,10 @@
+@use "sass:map";
+@use "../abstracts/index" as *;
+
+.container {
+  padding-inline: map.get($spacing, 6);
+
+  @include media-query-md() {
+    inline-size: px-to-rem(610px);
+  }
+}

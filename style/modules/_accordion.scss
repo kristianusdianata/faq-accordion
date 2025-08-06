@@ -1,0 +1,76 @@
+@use "sass:map";
+@use "../abstracts/index" as *;
+
+.decoration {
+  display: block;
+  block-size: px-to-rem(232px);
+  overflow: hidden;
+
+  @include media-query-sm() {
+    block-size: px-to-rem(320px);
+  }
+
+  img {
+    object-fit: cover;
+  }
+}
+
+.accordion {
+  inline-size: 100%;
+  background-color: var(--white);
+  border-radius: map.get($radius, br-4);
+  padding: map.get($spacing, 8);
+  padding-block-end: 0px;
+  margin-block-end: map.get($spacing, 8);
+
+  &__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: map.get($spacing, 6);
+
+    .icon {
+      inline-size: px-to-em(25px);
+      block-size: px-to-em(25px);
+
+      @include media-query-md() {
+        inline-size: px-to-em(32px);
+        block-size: px-to-em(32px);
+      }
+    }
+  }
+
+  &__item {
+    padding-block: map.get($spacing, 6);
+    border-block-end: 1px solid var(--purple-100);
+
+    &-header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+
+      .title {
+        @include font-heading-2($color: var(--purple-950), $font-weight: 600);
+        flex: 0 0 80%;
+      }
+
+      .icon {
+        flex: 0 0 auto;
+        block-size: px-to-em(30px);
+      }
+
+      &:hover {
+        .title {
+          color: var(--purple-750);
+        }
+      }
+    }
+
+    &-desc {
+      @include font-preset-2($color: var(--purple-600), $line-height: 1.5);
+      padding-block-start: map.get($spacing, 6);
+    }
+  }
+}
