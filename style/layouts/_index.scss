@@ -5,6 +5,6 @@
   padding-inline: map.get($spacing, 6);
 
   @include media-query-md() {
-    inline-size: px-to-rem(610px);
+    inline-size: px-to-rem(650px);
   }
 }

@@ -30,18 +30,13 @@
     column-gap: map.get($spacing, 6);
 
     .icon {
-      inline-size: px-to-em(25px);
-      block-size: px-to-em(25px);
-
-      @include media-query-md() {
-        inline-size: px-to-em(32px);
-        block-size: px-to-em(32px);
-      }
+      inline-size: px-to-em(35px);
+      block-size: px-to-em(35px);
     }
   }
 
   &__item {
-    padding-block: map.get($spacing, 6);
+    padding-block: map.get($spacing, 8);
     border-block-end: 1px solid var(--purple-100);
 
     &-header {
@@ -69,7 +64,7 @@
     }
 
     &-desc {
-      @include font-preset-2($color: var(--purple-600), $line-height: 1.5);
+      @include font-preset-1($color: var(--purple-600), $line-height: 1.5);
       padding-block-start: map.get($spacing, 6);
     }
   }

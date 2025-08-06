@@ -45,15 +45,11 @@ $fontSize: (
 ) {
   @include font-style(
     $color: $color,
-    $font-size: map.get($fontSize, fs-6),
+    $font-size: map.get($fontSize, fs-8),
     $letter-spacing: $letter-spacing,
     $line-height: $line-height,
     $font-weight: $font-weight
   );
-
-  @include media-query-sm() {
-    font-size: map.get($fontSize, fs-7);
-  }
 }
 
 @mixin font-heading-2(
@@ -72,21 +68,6 @@ $fontSize: (
 }
 
 @mixin font-preset-1(
-  $color: "",
-  $letter-spacing: 0,
-  $line-height: inherit,
-  $font-weight: 400
-) {
-  @include font-style(
-    $color: $color,
-    $font-size: map.get($fontSize, fs-3),
-    $letter-spacing: $letter-spacing,
-    $line-height: $line-height,
-    $font-weight: $font-weight
-  );
-}
-
-@mixin font-preset-2(
   $color: "",
   $letter-spacing: 0,
   $line-height: inherit,
