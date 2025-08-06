@@ -19,7 +19,7 @@
   inline-size: 100%;
   background-color: var(--white);
   border-radius: map.get($radius, br-4);
-  padding: map.get($spacing, 8);
+  padding: map.get($spacing, 10);
   padding-block-end: 0px;
   margin-block-end: map.get($spacing, 8);
 

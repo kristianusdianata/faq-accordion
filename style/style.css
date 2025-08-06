@@ -141,7 +141,7 @@ h1 {
   inline-size: 100%;
   background-color: var(--white);
   border-radius: 12px;
-  padding: 2em;
+  padding: 2.5em;
   padding-block-end: 0px;
   margin-block-end: 2em;
 }
