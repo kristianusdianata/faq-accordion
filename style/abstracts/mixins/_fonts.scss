@@ -75,7 +75,7 @@ $fontSize: (
 ) {
   @include font-style(
     $color: $color,
-    $font-size: map.get($fontSize, fs-2),
+    $font-size: map.get($fontSize, fs-3),
     $letter-spacing: $letter-spacing,
     $line-height: $line-height,
     $font-weight: $font-weight
